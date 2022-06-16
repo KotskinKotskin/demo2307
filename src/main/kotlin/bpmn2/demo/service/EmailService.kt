@@ -8,7 +8,14 @@ import org.springframework.stereotype.Service
 @Service
 class EmailService {
 
-    fun sendEmail(to: String, from: String, subject: String, text: String, host: String, port: Int, userName: String, password: String) {
+    fun sendEmail(to: String,
+                  from: String,
+                  subject: String,
+                  text: String,
+                  host: String,
+                  port: Int,
+                  userName: String,
+                  password: String) {
         var email = EmailBuilder.startingBlank()
             .to(to)
             .from(from)
